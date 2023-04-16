@@ -7,6 +7,8 @@ let resetBtn = document.querySelector(".reset");
 let winDecreBtn = document.querySelector(".winDecrement");
 let looseDecreBtn = document.querySelector(".looseDecrement");
 
+percentageText.style.color = "rgb(255, 43, 43)";
+
 
 let win = 0;
 let loose = 0;
@@ -16,6 +18,12 @@ function updateUI(){
     winText.textContent = win +"W";
     looseText.textContent = loose + "L"
     percentageText.textContent = percentage +"%";
+    if(percentage >= 50){
+        percentageText.style.color = "rgb(24, 169, 24)";
+    }
+    else{
+        percentageText.style.color = "rgb(255, 43, 43)";
+    }
 }
 
 function winIncrement(){

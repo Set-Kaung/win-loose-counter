@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.25rem;
 }
 
 .text-container{
@@ -37,7 +38,7 @@ button{
     color: #3cd5e6;
     background-color: #1d28a3bd;
     padding: 5px;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .win-loose-cont{
@@ -51,4 +52,10 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:3px;
+    padding: 3px;
+}
+
+.reset{
+    margin: 5px;
 }
