@@ -41,17 +41,19 @@ function looseIncrement(){
 function winDecrement(){
     if(win>0){
         win--;
+        calcPercentage();
+        updateUI();
     }
-    calcPercentage();
-    updateUI();
+    
 }
 
 function looseDecrement(){
     if(loose>0){
         loose--;
+        calcPercentage();
+        updateUI();
     }
-    calcPercentage();
-    updateUI();
+    
 }
 
 function reset(){
